@@ -1,0 +1,10 @@
+C:\Users\OMISTAJ\Desktop\Proggiksia\MouseTester\MouseTester\bin\Debug\MouseTester.exe.config
+C:\Users\OMISTAJ\Desktop\Proggiksia\MouseTester\MouseTester\bin\Debug\MouseTester.exe
+C:\Users\OMISTAJ\Desktop\Proggiksia\MouseTester\MouseTester\bin\Debug\MouseTester.pdb
+C:\Users\OMISTAJ\Desktop\Proggiksia\MouseTester\MouseTester\obj\Debug\MouseTester.csprojResolveAssemblyReference.cache
+C:\Users\OMISTAJ\Desktop\Proggiksia\MouseTester\MouseTester\obj\Debug\MouseTester.Form1.resources
+C:\Users\OMISTAJ\Desktop\Proggiksia\MouseTester\MouseTester\obj\Debug\MouseTester.Properties.Resources.resources
+C:\Users\OMISTAJ\Desktop\Proggiksia\MouseTester\MouseTester\obj\Debug\MouseTester.csproj.GenerateResource.Cache
+C:\Users\OMISTAJ\Desktop\Proggiksia\MouseTester\MouseTester\obj\Debug\MouseTester.csproj.CoreCompileInputs.cache
+C:\Users\OMISTAJ\Desktop\Proggiksia\MouseTester\MouseTester\obj\Debug\MouseTester.exe
+C:\Users\OMISTAJ\Desktop\Proggiksia\MouseTester\MouseTester\obj\Debug\MouseTester.pdb
