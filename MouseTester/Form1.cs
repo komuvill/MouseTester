@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,10 @@ namespace MouseTester
     {
         int eventCounter = 0;
 
+        Stopwatch swMidClick = new Stopwatch();
+        Stopwatch swLeftClick = new Stopwatch();
+        Stopwatch swRightClick = new Stopwatch();
+
         public Form1()
         {
             InitializeComponent();
@@ -30,12 +35,14 @@ namespace MouseTester
                 eventCounter++;
                 debugOutput.AppendText(eventCounter + " - Scrolled up.");
                 debugOutput.AppendText(Environment.NewLine);
+
             }
             else
             {
                 eventCounter++;
                 debugOutput.AppendText(eventCounter + " - Scrolled down.");
                 debugOutput.AppendText(Environment.NewLine);
+
             }
         }
 
@@ -46,18 +53,21 @@ namespace MouseTester
                 eventCounter++;
                 debugOutput.AppendText(eventCounter + " - Left button pressed.");
                 debugOutput.AppendText(Environment.NewLine);
+                swLeftClick.Restart();
             }
             else if (e.Button == MouseButtons.Right)
             {
                 eventCounter++;
                 debugOutput.AppendText(eventCounter + " - Right button pressed.");
                 debugOutput.AppendText(Environment.NewLine);
+                swRightClick.Restart();
             }
             else if (e.Button == MouseButtons.Middle)
             {
                 eventCounter++;
                 debugOutput.AppendText(eventCounter + " - Scroll wheel pressed.");
                 debugOutput.AppendText(Environment.NewLine);
+                swMidClick.Restart();
             }
         }
 
@@ -66,19 +76,19 @@ namespace MouseTester
             if (e.Button == MouseButtons.Left)
             {
                 eventCounter++;
-                debugOutput.AppendText(eventCounter + " - Left button released.");
+                debugOutput.AppendText(eventCounter + " - Left button released. (" + swLeftClick.ElapsedMilliseconds + "ms)");
                 debugOutput.AppendText(Environment.NewLine);
             }
             else if (e.Button == MouseButtons.Right)
             {
                 eventCounter++;
-                debugOutput.AppendText(eventCounter + " - Right button released.");
+                debugOutput.AppendText(eventCounter + " - Right button released.(" + swRightClick.ElapsedMilliseconds + "ms)");
                 debugOutput.AppendText(Environment.NewLine);
             }
             else if (e.Button == MouseButtons.Middle)
             {
                 eventCounter++;
-                debugOutput.AppendText(eventCounter + " - Scroll wheel released.");
+                debugOutput.AppendText(eventCounter + " - Scroll wheel released.(" + swMidClick.ElapsedMilliseconds + "ms)");
                 debugOutput.AppendText(Environment.NewLine);
             }
         }
